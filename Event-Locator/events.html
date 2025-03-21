@@ -3,25 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events List</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Event Results - Event Locator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="index.html">Event Locator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">All Events</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <h2 class="text-center">Available Events</h2>
-        <div id="event-list" class="row mt-3">
-            <!-- Event cards will be dynamically added here -->
+    <main class="container my-5">
+        <div class="row mb-4">
+            <div class="col">
+                <h2>Events in <span id="cityName">Your City</span></h2>
+                <div class="filters d-flex gap-3">
+                    <select class="form-select w-auto" id="filterCategory">
+                        <option value="">All Categories</option>
+                        <option value="music">Music</option>
+                        <option value="sports">Sports</option>
+                        <option value="arts">Arts & Theater</option>
+                        <option value="food">Food & Drink</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                    <input type="date" class="form-control w-auto" id="filterDate">
+                </div>
+            </div>
         </div>
-    </div>
 
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="row" id="eventsList">
+            <!-- Events will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
