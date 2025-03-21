@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Rock Festival 2024",
+        "date": "2024-07-20",
+        "location": "Hargeisa, Somalia",
+        "category": "Music",
+        "description": "A grand music festival featuring top artists."
+    },
+    {
+        "id": 2,
+        "name": "Tech Conference 2024",
+        "date": "2024-08-05",
+        "location": "Rwanda",
+        "category": "Tech",
+        "description": "A conference showcasing the latest technology trends."
+    },
+    {
+        "id": 3,
+        "name": "Football Championship",
+        "date": "2024-09-10",
+        "location": "Kigali, Rwanda",
+        "category": "Sports",
+        "description": "An exciting football championship event."
+    }
+]
